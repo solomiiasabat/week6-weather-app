@@ -27,7 +27,7 @@
     <div class="container">
     <form class="search-line" id="search-line">
       <div class="row">
-        <div class="col-9">
+        <div class="col-6">
           <input
             type="search"
             placeholder="Type a city"
@@ -39,8 +39,16 @@
           <input 
           type="submit" 
           value="Search"
-          class="form-control btn btn-primary"
+          class="form-control btn btn-primary w-100"
           id="search-weather"
+          />
+        </div>
+         <div class="col-3">
+          <input 
+          type="submit" 
+          value="Current"
+          class="btn btn-success"
+          id="current-location"
           />
         </div>
       </div>
@@ -49,9 +57,9 @@
     <h1 class="city">
       <i class="fa-solid fa-location-dot"></i>
       <span id="chosen-city">Kyiv</span> 
-      <span id="current-temperature">18</span>
+      <span id="current-temperature"></span>
       <span class="tempValues"><span id="celsius">°C</span> 
-      </span> ☀️
+      </span>
     </h1>
 
     <div class="row">
@@ -59,8 +67,8 @@
 
       <div class="col-6 additional">
         <ul>
-          <li>Precipation: 57%</li>
-          <li>Wind: 5km/h</li>
+          <li>Humidity: <span  id="humidity"></span>%</li>
+          <li>Wind: <span  id="wind"></span>km/h</li>
         </ul>
       </div>
 
@@ -96,9 +104,6 @@
         </div>
       </div>
     </div>
-     <div>
-          <a href="https://github.com/solomiiasabat/week6-weather-app"> Open-source code</a> by Solomiia Sabat
-      </div>
     <script src="index.js" ></script>
   </body>
 </html>

@@ -22,8 +22,16 @@ body {
   left: -10px;
 }
 
+#current-date {
+  position: relative;
+  left: 35px;
+}
+
 li {
   list-style: none;
+  text-align: left;
+  position: relative;
+  left: 30px;
 }
 
 .day {
